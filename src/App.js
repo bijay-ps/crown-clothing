@@ -48,7 +48,7 @@ export class App extends React.Component {
           <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             exact
-            path="/signIn"
+            path="/signin"
             render={() =>
               this.props.currentUser ? (
                 <Redirect to="/" />
