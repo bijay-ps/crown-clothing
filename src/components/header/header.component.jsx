@@ -9,7 +9,7 @@ import { auth } from "../../firebase/firebase.utils";
 import './header.styles.scss';
 
 import CartIcon from "../cart-icon/cart-icon.component";
-import {CartDropdown} from "../cart-dropdown/cart-dropdown.component";
+import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 
 
 const Header = ({ currentUser, hidden }) => (
@@ -41,7 +41,7 @@ const Header = ({ currentUser, hidden }) => (
 );
 
 // state is root reducer
-const mapStateToProps = ({ user: {currentUser }, cart: { hidden }}) => ({
+const mapStateToProps = ({ user: { currentUser }, cart: { hidden }}) => ({
   currentUser,
   hidden
 });
